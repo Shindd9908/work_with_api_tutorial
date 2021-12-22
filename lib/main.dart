@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_movie_db/views/food_home.dart';
+import 'package:the_movie_db/screens/flutter_with_api_2/main_screen.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           textTheme: const TextTheme(
             bodyText2: TextStyle(color: Colors.white),
           )),
-      home: const FoodHomePage(),
+      home: const MainScreen(),
     );
   }
 }
