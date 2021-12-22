@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_movie_db/screens/vn/provices_vn.dart';
+import 'package:the_movie_db/views/food_home.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -11,8 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark(),
-      home: const ProvicesVietNam(),
+      theme: ThemeData(
+          primaryColor: Colors.white,
+          primarySwatch: Colors.blue,
+          textTheme: const TextTheme(
+            bodyText2: TextStyle(color: Colors.white),
+          )),
+      home: const FoodHomePage(),
     );
   }
 }
